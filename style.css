@@ -450,11 +450,15 @@ nav {
 
 .ingridents-items {
   display: flex;
-  gap: 15px;
+  gap: 12px;
   margin-bottom: 10px;
 }
 
-.ingridents-title, .ingridents-desc {
+.ingridents-title{
+  width: 125px;
+} 
+
+.ingridents-desc {
   width: 140px;
 }
 
@@ -505,7 +509,7 @@ nav {
 color: #4EA3A7;
 padding: 4px 18px;
 font-size: 13px;
-font-weight: 800;
+font-weight: 600;
 line-height: 30px;
 border: 1px solid #C0DFE0;
 border-radius: 4px;
@@ -570,7 +574,7 @@ display: none;
     }
 
     .intro-list{
-        padding-left: 20px;
+        padding-left: 15px;
         width: 80%;
     }
 
@@ -605,7 +609,7 @@ display: none;
     .feature-item-text{
         color: #ffffff;
         font-size: 24px;
-        font-weight: 900;
+        font-weight: 700;
         line-height: 28px;
         position: absolute;
         bottom: 10px;
@@ -635,7 +639,7 @@ display: none;
 
     .recipe-item p{
         font-size: 18px;
-        font-weight: 900;
+        font-weight: 700;
         line-height: 22px;
         width: 50%;
         color: #037D88;
@@ -736,7 +740,7 @@ display: none;
 }
 
 .quick-links li span{
-    color: #037D88;
+    color: #3B9B9F;
 }
 
 .copy-right{
@@ -858,7 +862,7 @@ display: none;
   .product-name-list {
     display: flex;
     gap: 40px;
-    border-top: 2px solid lightgray;
+    border-top: 1px solid lightgray;
     margin-top: 15px;
     padding-top: 15px;
   }
@@ -1137,7 +1141,7 @@ nav.navbar.navbar-expand-lg {
 
   .product-details-banner img {
     width: 100%;
-    height: 60vh;
+    height: 330px;
     object-fit: cover;
     object-position: bottom center;
   }
@@ -1148,7 +1152,7 @@ nav.navbar.navbar-expand-lg {
 
   .banner-text {
     display: block;
-    background-color: #00000087;
+    background-color: rgb(0 0 0 / 30%);
     position: absolute;
     bottom: 20px;
     width: 100%;
@@ -1174,7 +1178,7 @@ nav.navbar.navbar-expand-lg {
   }
 
 .ingridents-title{
-  width: 150px;
+  width: 135px;
 }
 
 .mobile-screen{
@@ -1235,6 +1239,7 @@ line-height: 30px;
 
 .functionality-left{
     padding-left: 0px;
+    margin-bottom: 30px;
 }
 
 .functionality-left h1{
@@ -1251,7 +1256,7 @@ line-height: 30px;
 
 .functional-list ul li{
 font-size: 14px;
-margin-bottom: 10px;
+margin-bottom: 4px;
 }
 
 .functionality-bg .row{
@@ -1260,7 +1265,7 @@ margin-bottom: 10px;
 
 
 .product-intoduction{
-    padding: 20px 0px;
+    padding: 30px 0px;
 }
 
 .product-intro-content h4{
@@ -1430,6 +1435,16 @@ img.product-close {
     left: 8%;
 }
 
+.quick-links img{
+  display: none;
+}
+
+.footer-contact-info {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
 
 }
 
@@ -1452,7 +1467,7 @@ img.product-close {
 .functionality-right img{
     width: 45%;
     position: absolute;
-    top: -40px;
+    top: -20px;
     right: 0;
     
 }
@@ -1479,7 +1494,7 @@ img.product-close {
 
   
   .banner-img {
-    height: 62vh;
+    height: 393px;
     object-fit: cover;
   }
 
