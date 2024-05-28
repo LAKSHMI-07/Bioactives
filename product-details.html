@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header id="header">
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="images/bioactives-logo.png" alt="" />
+          </a>
+          <div class="mobile-header-items">
+            <button class="navbar-toggler mob-search" type="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+            </button>
+
+            <div class="mob-search-border"></div>
+            <button class="navbar-toggler mobile-inquiry-link" type="button">
+              Product Inquiry
+            </button>
+            <div class="mob-search-border"></div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-end align-items-lg-center flex-grow-1 pe-5"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li><div class="vline"></div></li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    id="dropdownMenuButton"
+                  >
+                    Solution
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      fill="currentColor"
+                      class="bi bi-chevron-down"
+                      viewBox="0 0 16 16"
+                      id="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Introduction of Raw 
+                        Materials</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Concept Making</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Protype & Recipe</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">OEM / PB</a>
+                      </li>
+                  </ul>
+                </li>
+                <li><div class="vline"></div></li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Portfolio
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      fill="currentColor"
+                      class="bi bi-chevron-down rotate-icon"
+                      viewBox="0 0 16 16"
+                      id="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"> Nutritional Ingredients</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#"> ⁠Natural color</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">⁠Natural flavors</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Spices and oleoresins</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Proteins</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">⁠Performance ingredients</a>
+                      </li>
+                  </ul>
+                </li>
+                <li><div class="vline"></div></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Recipe</a>
+                </li>
+                <li><div class="vline"></div></li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Strength
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      fill="currentColor"
+                      class="bi bi-chevron-down rotate-icon"
+                      viewBox="0 0 16 16"
+                      id="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Raw material procurement</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Quality management</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Sustainability</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Team structure</a>
+                      </li>
+                  </ul>
+                </li>
+                <li><div class="vline"></div></li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    About
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      fill="currentColor"
+                      class="bi bi-chevron-down rotate-icon"
+                      viewBox="0 0 16 16"
+                      id="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">SDGs</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">History</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Company Profile</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="search-box">
+                <div class="search-border"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <a class="inquiry-link" href="#">Product Inquiry</a>
+      </div>
+    </header>
+
+
+
+
+    <!-- Banner section -->
+    <section>
+      <div class="product-details-banner">
+        <img src="images/marigold-bg.png" alt="" />
+        <div class="banner-text">
+          <h3>Functional</h3>
+          <p>Ingredients > Functional > Turmeric extract (Turmeric Max®)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section-1 -->
+    <section class="py-lg-5 ">
+        <div class="container">
+            <div class="row align-items-center py-2">
+                <div class="col-sm-12 col-lg-4">
+                    <div class="product-details-left">
+                        <div class="mobile-screen">
+                        <h1 class="mt-3">Turmeric extract (Turmeric Max®)
+                            <img src="images/product_details/logo-small.svg" width="18" alt="">
+                            <span class="Ukonmax">Ukonmax®</span>
+                        </h1>
+                        
+                        </div>
+                            <div class="ingridents-list">
+                                <img class="product-img" src="images/product_details/turmeric.png" alt="">
+
+                                <!-- mobile buttons -->
+                               <div class="mobile-screen">
+                                <div class="product-category-btn d-flex">
+                                    <button>Brain support</button>
+                                    <button>Antioxident</button>
+                                    <button>Immunity</button>
+                                </div>
+                               </div>
+
+                               <div class="mobile-screen">
+                                <div class="pd-consumption-form">
+                                    <div class="d-flex justify-content-between pb-3">
+                                        <div class="consumptions-item text-center">
+                                            <img src="images/product_details/drink.svg" alt="">
+                                            <p>Drink</p>
+                                        </div>
+                                        <div class="consumptions-item text-center">
+                                            <img src="images/product_details/jelly.svg" alt="">
+                                            <p>Jelly</p>
+                                        </div>
+                                        <div class="consumptions-item text-center">
+                                            <img src="images/product_details/tablet.svg" alt="">
+                                            <p>Tablet</p>
+                                        </div>
+                                        <div class="consumptions-item text-center">
+                                            <img src="images/product_details/sidedish.svg" alt="">
+                                            <p>Side dish</p>
+                                        </div>
+                                    </div>
+
+                                    
+                                    
+                                    <div class="d-flex justify-content-between">
+                                        <div class="consumptions-item text-center">
+                                            <img src="images/product_details/Soft-capsule.svg" alt="">
+                                            <p>Soft capsule</p>
+                                        </div>
+                                        <div class="consumptions-item text-center">
+                                            <img src="images/product_details/water.svg" alt="">
+                                            <p>Water Soluble</p>
+                                        </div>
+                                        <div class="consumptions-item text-center">
+                                            <img src="images/product_details/Hardcapsule.svg" alt="">
+                                            <p>Hard capsule</p>
+                                        </div>
+                                        <div class="consumptions-item text-center">
+                                            <img src="images/product_details/bread.svg" alt="">
+                                            <p>sweet bread</p>
+                                        </div>
+                                    </div>
+                                </div>
+                               </div>
+
+
+
+                                <!-- ingridents-item -->
+                                <div class="ingridents-item">
+                                    <div class="ingridents-items">
+                                        <div class="ingridents-title">Active Ingredient</div>
+                                        <div class="ingridents-sperator">-</div>
+                                        <div class="ingridents-desc">Curcuminoids</div>
+                                    </div>
+                                    <div class="ingridents-items">
+                                        <div class="ingridents-title">Standardization</div>
+                                        <div class="ingridents-sperator">-</div>
+                                        <div class="ingridents-desc">5%, 10%</div>
+                                    </div>
+                                    <div class="ingridents-items">
+                                        <div class="ingridents-title">Scientific name</div>
+                                        <div class="ingridents-sperator">-</div>
+                                        <div class="ingridents-desc">Curcuma longa</div>
+                                    </div>
+                                    <div class="ingridents-items">
+                                        <div class="ingridents-title">Origin material</div>
+                                        <div class="ingridents-sperator">-</div>
+                                        <div class="ingridents-desc">Turmeric/rhizome</div>
+                                    </div>
+                                    <div class="ingridents-items">
+                                        <div class="ingridents-title">Country of origin</div>
+                                        <div class="ingridents-sperator">-</div>
+                                        <div class="ingridents-desc">India</div>
+                                    </div>
+                                    <div class="ingridents-items">
+                                        <div class="ingridents-title">Recommended<br>intaket</div>
+                                        <div class="ingridents-sperator">-</div>
+                                        <div class="ingridents-desc">As curcumin<br>450-1800mg per day</div>
+                                    </div>
+                                    <div class="ingridents-items">
+                                        <div class="ingridents-title">Form</div>
+                                        <div class="ingridents-sperator">-</div>
+                                        <div class="ingridents-desc">Powder type</div>
+                                    </div>
+                                    <div class="ingridents-items">
+                                        <div class="ingridents-title">Characteristic</div>
+                                        <div class="ingridents-sperator">-</div>
+                                        <div class="ingridents-desc">Liver protection antioxidant<br>anti-inflammatory</div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-8">
+                    <div class="product-details-right">
+                        <div class="webscreen">
+                            <h1>Turmeric extract (Turmeric Max®)</h1>
+                        <div class="brand-name d-flex mb-3">
+                            <img src="images/product_details/logo-small.svg" alt="">
+                            <h3>Ukonmax®</h3>
+                        </div>
+                        <div class="product-category-btn d-flex">
+                            <button>Brain support</button>
+                            <button>Antioxident</button>
+                            <button>Immunity</button>
+                        </div>
+                        <div class="pd-consumption-form d-flex">
+                            <div class="consumptions-item text-center">
+                                <img src="images/product_details/drink.svg" alt="">
+                                <p>Drink</p>
+                            </div>
+                            <div class="consumptions-item text-center">
+                                <img src="images/product_details/jelly.svg" alt="">
+                                <p>Jelly</p>
+                            </div>
+                            <div class="consumptions-item text-center">
+                                <img src="images/product_details/tablet.svg" alt="">
+                                <p>Tablet</p>
+                            </div>
+                            <div class="consumptions-item text-center">
+                                <img src="images/product_details/sidedish.svg" alt="">
+                                <p>Side dish</p>
+                            </div>
+                            <div class="consumptions-item text-center">
+                                <img src="images/product_details/Soft-capsule.svg" alt="">
+                                <p>Soft capsule</p>
+                            </div>
+                            <div class="consumptions-item text-center">
+                                <img src="images/product_details/water.svg" alt="">
+                                <p>Water Soluble</p>
+                            </div>
+                            <div class="consumptions-item text-center">
+                                <img src="images/product_details/Hardcapsule.svg" alt="">
+                                <p>Hard capsule</p>
+                            </div>
+                            <div class="consumptions-item text-center">
+                                <img src="images/product_details/bread.svg" alt="">
+                                <p>sweet bread</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="product-desc">
+                            <p>
+                                Turmeric is one of the oldest spices, having been used for over 4,000 years. It is a plant that has been used since ancient times as a therapeutic medicine in Ayurveda (Indian traditional medicine), Jamu (Indonesian traditional medicine),Chinese medicine, etc. In addition to medicinal purposes, it is also widely used in cooking spices, dyes, and cosmetics.
+                                <br><br>
+                                Curcuminoids contained in turmeric are a type of polyphenol with strong antioxidant power, and are expected to not only have well-known liver care benefits, but also cancer prevention, anti-inflammatory effects, anti-thrombotic effects, and effects on Alzheimer's disease.
+                                <br><br>
+                                Curcuminoids contained in turmeric are a type of polyphenol with strong antioxidant power, and are expected to not only have well-known liver care benefits, but also cancer prevention, anti-inflammatory effects, anti-thrombotic effects, and effects on Alzheimer's disease.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section-2 -->
+    <section class="product-functionality">
+        <div class="functionality-bg">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="functionality-left">
+                            <h1>Functionality of turmeric extract (Turmeric Max®)</h1>
+                            <div class="functional-list d-lg-flex gap-5">
+                                <ul>
+                                    <li>liver protection</li>
+                                    <li>Joint support</li>
+                                    <li>Anti-inflammatory</li>
+                                    <li>Improving immunity</li>
+            
+                                </ul>
+                                <ul>
+                                    <li>Memory maintenance</li>
+                                    <li>Anti-obesity</li>
+                                    <li>Antioxidant</li>
+                                    <li>Beautiful skin effect</li>
+            
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="functionality-right">
+                            <img src="images/product_details/5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section-3 -->
+
+    <section class="product-intoduction py-lg-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-lg-6">
+                    <div class="product-intro-content">
+                        <h4>Introducing Turmeric Max</h4>
+                       <div class="intro-list">
+                        <ul>
+                            <li>We select varieties whose raw materials are guaranteed by the USDA and the Indian government.</li>
+                            <li>Contract cultivation is carried out in the Erodu region, known as the “turmeric village of India”.</li>
+                            <li>Complete traceability regarding cultivation areas, cultivation processes, yields, seed quality, etc.</li>
+                            <li>Extracted and processed at a group factory that has acquired ISO certification.</li>
+                            <li>Standardized with industry's highest concentration of 95% curcuminoid.</li>
+                        </ul>
+                       </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="product-intro-img">
+                        <img src="images/product_details/1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- section-4 -->
+
+    <section class="product-features">
+        <div class="container">
+            <h1>Features of Turmeric Max</h1>
+            <div class="row">
+                <div class="col-sm-12 col-lg-4">
+                    <div class="feature-item">
+                        <img class="feature-item-img" src="images/product_details/3.png" alt="">
+                        <p class="feature-item-text">Abundant<br> evidence data</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="feature-item">
+                        <img class="feature-item-img" src="images/product_details/4.png" alt="">
+                        <p class="feature-item-text">Wide range of<br> applications</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="feature-item">
+                        <img class="feature-item-img" src="images/product_details/2.png" alt="">
+                        <p class="feature-item-text">Through cooperation with group factories, we are able to offer products in various grades.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- section-5 -->
+
+    <section class="product-recipe">
+        <div class="container">
+            <h1>Recipe Using this ingerdients</h1>
+                <div class="row ">
+                    <div class="col-sm-12 col-lg-3">
+                        <div class="recipe-item margin-btm d-flex">
+                            <img src="images/product_details/tiramisu.png" alt="">
+                            <p>Turmeric tiramisu</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-3">
+                        <div class="recipe-item margin-btm d-flex">
+                            <img src="images/product_details/orange.png" alt="">
+                            <p>Energy drink</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-3">
+                        <div class="recipe-item margin-btm d-flex">
+                            <img src="images/product_details/jelly.png" alt="">
+                            <p>Turmeric ice cream made</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-3">
+                        <div class="recipe-item margin-btm d-flex">
+                            <img src="images/product_details/side-dish.png" alt="">
+                            <p>Powdered salad dressing</p>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="row ">
+                    <div class="col-sm-12 col-lg-3">
+                        <div class="recipe-item d-flex">
+                            <img src="images/product_details/icecream.png" alt="">
+                            <p>Turmeric soy latte</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-3">
+                        <div class="recipe-item d-flex">
+                            <img src="images/product_details/tiramisu.png" alt="">
+                            <p>Turmeric tiramisu</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+    <!-- Footer section -->
+
+    <Footer>
+        <!-- section-1 inquiry & subscription -->
+        <section>
+            <div class="inquiry-subcription">
+                <!-- <img src="images/footer-inquiry-bg.png" alt=""> -->
+              <div class="container">
+                <div class="inquiry-content">
+                    <h3>Inquiry & Subscription</h3>
+                    <p>Due to the spread of new coronavirus infections, the demand for products that enhance immunity is increasing worldwide.
+                        Herbal-derived immuno-stimulators are also expected to grow rapidly as consumers seek.</p>
+                    <div class="inquiry-btns">
+                        <a class="btn-subscription" href="#">Newsletter Subscription</a>
+                        <a class="btn-enquiry" href="#">Product Inquiry</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+         <!-- section-2 Quick Links -->
+
+         <section>
+         <div class="quick-links">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-sm-12 col-lg-3">
+                        <img src="images/bioactives-logo.png" alt="">
+                        <ul class="address">
+                            <li>Bio Actives Japan Co., Ltd</li>
+                            <li>BAJ Building 3F, 4-1-1 Minaminagaki<br>Toshima-ku, Tokyo 171-0052</li>
+                            <li><span>Phone:</span> 03-5981-0601</li>
+                            <li><span>Fax:</span> 03-5981-0602</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-lg-2">
+                        <h4>Solutions</h4>
+                        <ul>
+                            <li>Introduction of Raw Materials</li>
+                            <li>Concept Making</li>
+                            <li>Protype & Recipe</li>
+                            <li>OEM / PB</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-lg-2">
+                        <h4>Portfolio</h4>
+                        <ul>
+                            <li>Nutritional Ingredients</li>
+                            <li>Natural color</li>
+                            <li>Natural flavors</li>
+                            <li>Spices and oleoresins</li>
+                            <li>Functional beverages</li>
+                            <li>Proteins</li>
+                            <li>Performance ingredients</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-lg-2">
+                        <h4>Strength</h4>
+                        <ul>
+                            <li>Raw material procurement</li>
+                            <li>Quality management</li>
+                            <li>Sustainability</li>
+                            <li>Team structure</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-lg-2">
+                        <h4>About</h4>
+                        <ul>
+                            <li>SDGs</li>
+                            <li>History</li>
+                            <li>Company Profile</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </div>
+         </section>
+
+          <!-- section-3 copyright -->
+          <section>
+           <div class="copy-right">
+            <div class="container">
+                <div class="row  align-items-center">
+                    <div class=" col-8">
+                        <p>© Bio Actives Japan Corporation 2022. All Rights reserved   |  Privacy Policy</p>
+                    </div>
+                    <div class=" col-4 text-end">
+                        <a href="#">SiteMap</a>
+                    </div>
+                </div>
+            </div>
+           </div>
+          </section>
+    </Footer>
+
+
+
+
+
+
+
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var header = document.getElementById("header");
+        if (window.scrollY === 0) {
+          header.classList.remove("sticky");
+        } else {
+          header.classList.add("sticky");
+        }
+      });
+    </script>
+
+    <script>
+      const select = document.querySelector(".cf-select");
+const options_list = document.querySelector(".cf-options-list");
+const options = document.querySelectorAll(".cf-option");
+
+//show & hide options list
+select.addEventListener("click", () => {
+  options_list.classList.toggle("cf-active");
+  select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+});
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

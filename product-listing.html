@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <!-- Header Section -->
+
+    <header id="header">
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="images/bioactives-logo.png" alt="" />
+          </a>
+          <div class="mobile-header-items">
+            <button class="navbar-toggler mob-search" type="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+            </button>
+
+            <div class="mob-search-border"></div>
+            <button class="navbar-toggler mobile-inquiry-link" type="button">
+              Product Inquiry
+            </button>
+            <div class="mob-search-border"></div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-end align-items-lg-center flex-grow-1 pe-5"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li><div class="vline"></div></li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    id="dropdownMenuButton"
+                  >
+                    Solution
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      fill="currentColor"
+                      class="bi bi-chevron-down"
+                      viewBox="0 0 16 16"
+                      id="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Introduction of Raw 
+                        Materials</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Concept Making</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Protype & Recipe</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">OEM / PB</a>
+                      </li>
+                  </ul>
+                </li>
+                <li><div class="vline"></div></li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Portfolio
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      fill="currentColor"
+                      class="bi bi-chevron-down rotate-icon"
+                      viewBox="0 0 16 16"
+                      id="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"> Nutritional Ingredients</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#"> ⁠Natural color</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">⁠Natural flavors</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Spices and oleoresins</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Proteins</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">⁠Performance ingredients</a>
+                      </li>
+                  </ul>
+                </li>
+                <li><div class="vline"></div></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Recipe</a>
+                </li>
+                <li><div class="vline"></div></li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Strength
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      fill="currentColor"
+                      class="bi bi-chevron-down rotate-icon"
+                      viewBox="0 0 16 16"
+                      id="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Raw material procurement</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Quality management</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Sustainability</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Team structure</a>
+                      </li>
+                  </ul>
+                </li>
+                <li><div class="vline"></div></li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    About
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      fill="currentColor"
+                      class="bi bi-chevron-down rotate-icon"
+                      viewBox="0 0 16 16"
+                      id="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">SDGs</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">History</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Company Profile</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="search-box">
+                <div class="search-border"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <a class="inquiry-link" href="#">Product Inquiry</a>
+      </div>
+    </header>
+
+    <!-- Banner section -->
+    <div class="banner">
+        <img class="banner-img" src="images/marigold-bg.png" alt="" />
+        <div class="pmenu">
+          <div class="container">
+            <div class="portfmenu">
+              <ul id="portfnav">
+                <li class="menu-item active">
+                  <a href="#">
+                    <p class="pfmicon">
+                      <img  class="eye-icon" src="images/category/all.png" />
+                    </p>
+                    ALL
+                  </a>
+                </li>
+                
+                 
+                
+    
+                <li class="menu-item">
+                  <div class="pverticalline"></div>
+                  <a href="#">
+                    <p class="pfmicon">
+                      <img src="images/category/eyecare.png" />
+                    </p>
+                    EYE<br/>CARE
+                  </a>
+                </li>
+    
+                <li class="menu-item">
+                  <div class="pverticalline"></div>
+                  <a href="#">
+                    <p class="pfmicon">
+                      <img src="images/category/bonesupport.png" />
+                    </p>
+                    BONE<br />SUPPORT
+                  </a>
+                </li>
+    
+                <li class="menu-item">
+                  <div class="pverticalline"></div>
+                  <a href="#">
+                    <p class="pfmicon">
+                      <img src="images/category/superfoods.png" />
+                    </p>
+                    SUPER <br />
+                    FOODS
+                  </a>
+                </li>
+    
+                <li class="menu-item">
+                  <div class="pverticalline"></div>
+                  <a href="#">
+                    <p class="pfmicon">
+                      <img src="images/category/womenshealth.png" />
+                    </p>
+    
+                    WOMEN'S <br />
+                    HEALTH
+                  </a>
+                </li>
+    
+                <li class="menu-item">
+                  <div class="pverticalline"></div>
+                  <a href="#">
+                    <p class="pfmicon">
+                      <img src="images/category/antioxidants.png" />
+                    </p>
+                    ANTIOXIDANTS
+                  </a>
+                </li>
+    
+                <li class="menu-item">
+                  <div class="pverticalline"></div>
+                  <a href="#">
+                    <p class="pfmicon">
+                      <img src="images/category/Brainsupport3X.png" />
+                    </p>
+                    BRAIN <br />
+                    SUPPORT
+                  </a>
+                </li>
+    
+                <li class="menu-item">
+                  <div class="pverticalline"></div>
+                  <a href="#">
+                    <p class="pfmicon">
+                      <img src="images/category/immunity.png" />
+                    </p>
+                    IMMUNITY
+                  </a>
+                </li>
+    
+                <li class="menu-item">
+                  <div class="pverticalline"></div>
+                  <a href="#">
+                    <p class="pfmicon">
+                      <img src="images/category/skincare.png" />
+                    </p>
+                    SKIN CARE
+                  </a>
+                </li>
+    
+                <li class="menu-item">
+                  <div class="pverticalline"></div>
+                  <a href="#">
+                    <p class="pfmicon">
+                      <img src="images/category/menshealth.png" />
+                    </p>
+                    MEN'S <br />
+                    HEALTH
+                  </a>
+                </li>
+    
+                <li class="menu-item">
+                  <div class="pverticalline"></div>
+                  <a href="#">
+                    <p class="pfmicon">
+                      <img src="images/category/sportsnutrition.png" />
+                    </p>
+                    SPORTS <br />
+                    NUTRITION
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <!-- Consumption Form web -->
+   <div class="consumption-form-web">
+    <div class="container">
+      <div class="consumption-form">
+        <h2>Consumption Form</h2>
+        <div class="consumption-form-container">
+            <a href="#">
+                <div class="icon-text-container">
+                    <span>ALL</span>
+                  </div>
+              </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  width="22" height="22" src="images/consumption_form/Drink.svg" />
+                <span>Drink</span>
+              </div>
+          </a>
+          
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon" src="images/consumption_form/jelly.svg" />
+                <span>Jelly</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon" src="images/consumption_form/alternativemeat.svg" />
+                <span>Alternative Meat</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon i-gray" src="images/consumption_form/watersoluble.svg" />
+                <img  class="icon i-white" src="images/consumption_form/water-soluble-white.svg" />
+                <span>Water Soluble</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon i-gray" src="images/consumption_form/sidedish.svg" />
+                <img  class="icon i-white" src="images/consumption_form/sidedish-white.svg" />
+                <span>Side Dish</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon" src="images/consumption_form/noodles.svg" />
+                <span>Noodles</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon" src="images/consumption_form/oilsoluble.svg" />
+                <span>Oil Soluble</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon" src="images/consumption_form/softcapsule.svg" />
+                <span>Soft Capsule</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon" src="images/consumption_form/hardcapsule.svg" />
+                <span>Hard Capsule</span>
+              </div>
+          </a>
+          
+
+        </div>
+      </div>
+    </div>
+   </div>
+
+    <!-- Consumption Form Mobile-->
+   <div class="container">
+    <div class="consumption-form-mobile">
+      <div class="cf-select-menu">
+        <div class="cf-select">
+          <span>Consumption Form</span>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <div class="cf-options-list">
+          <div class="cf-option"><input type="checkbox">Drink</div>
+          <div class="cf-option"> <input type="checkbox">Jelly</div>
+          <div class="cf-option"> <input type="checkbox">Tablet</div>
+          <div class="cf-option"> <input type="checkbox">Alternative Meat</div>
+          <div class="cf-option"> <input type="checkbox">Water Soluble</div>
+          <div class="cf-option"> <input type="checkbox">Side Dish</div>
+          <div class="cf-option"> <input type="checkbox">Noodles</div>
+          <div class="cf-option"> <input type="checkbox"> Soluble</div>
+          <div class="cf-option"> <input type="checkbox">Soft Capsule</div>
+          <div class="cf-option"> <input type="checkbox">Hard Capsule</div>
+        </div>
+      </div>
+     </div>
+   </div>
+
+   <!-- Product Filter Section-->
+    <div class="container">
+     
+  
+      <div class="product-result-set">
+        <div class="product-bread-crum">
+          <div class="product-title">
+            <h2>Functional Ingredients</h2>
+            <p><span class="crum1" >Ingredients</span>  <span class="crum2">> Functional Ingredients</span></p>
+          </div>
+        </div>
+        <div class="product-resut">
+          <p><span class="presult-count">50</span> Products Found</p>
+        </div>
+      </div>
+
+    </div>
+
+    
+    <!-- Product List -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="product-list-items">
+                    <div class="product-list-item">
+                        <div class="product-thumbnail-img">
+                            <img src="images/amla.png" alt="" />
+                          </div>
+                          <div class="product-content">
+                            <h4>Amla Extract</h4>
+                            <div class="product-tags">
+                              <p class="product-tag-item">Tannis</p>
+                              <div class="p_v_line"></div>
+                              <p class="product-tag-item">Amala</p>
+                              <div class="p_v_line"></div>
+                              <p>20% 40%</p>
+                            </div>
+                            <p class="tag-block">Antioxident</p>
+                          </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-thumbnail-img">
+                            <img src="images/banana.png" alt="" />
+                          </div>
+                          <div class="product-content">
+                            <h4>Banaba Extract</h4>
+                            <div class="product-tags">
+                              <p class="product-tag-item">Tannis</p>
+                              <div class="p_v_line"></div>
+                              <p class="product-tag-item">Amala</p>
+                              <div class="p_v_line"></div>
+                              <p>20% 40%</p>
+                            </div>
+                            <p class="tag-block">Antioxident</p>
+                          </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-thumbnail-img">
+                            <img src="images/garlic.png" alt="" />
+                          </div>
+                          <div class="product-content">
+                            <h4>Garlic Extract</h4>
+                            <div class="product-tags">
+                              <p class="product-tag-item">Tannis</p>
+                              <div class="p_v_line"></div>
+                              <p class="product-tag-item">Amala</p>
+                              <div class="p_v_line"></div>
+                              <p>20% 40%</p>
+                            </div>
+                            <p class="tag-block">Antioxident</p>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-details-card">
+                <div class="product-card">
+                    <div class="active-indicator">
+
+                    </div>
+                    <img src="images/close.svg" class="product-close" alt="">
+                    <div class="product-content-hover">
+                        <div class="product-content-hover-left">
+                            <div class="mobile-screen">
+                              <div class="d-flex product-mob-container">
+                                <div class="product-img-mob-left">
+                                    <img src="images/banaba-big.png" alt="">
+                                  </div>
+                                  <div class="product-content-mob-right">
+                                      <div class="product-card-icons">
+                                          <img src="images/jelly.png"  width="25">
+                                          <img src="images/tablet.png" width="25">
+                                          <img src="images/tabletss.png" width="25">
+                                      </div>
+                                      <h4>Banana extract</h4>
+                                      <div class="product-tags-mob">
+                                          <p class="product-tag-item">Ascorbic acid</p>
+                                          <div class="p_v_line"></div>
+                                          <p class="product-tag-item">Acerola Fruit</p>
+                                          <div class="p_v_line"></div>
+                                          <p class="product-tag-item">17-19%</p>
+                                          <div class="p_v_line"></div>
+                                          <p class="product-tag-item">Antioxidant</p>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                          <h4 class="web-title">Banana extract</h4>
+                          <div class="product-tags">
+                            <p class="product-tag-item">Ascorbic acid</p>
+                            <div class="p_v_line"></div>
+                            <p class="product-tag-item">Acerola Fruit</p>
+                            <div class="p_v_line"></div>
+                            <p class="product-tag-item">17-19%</p>
+                            <div class="p_v_line"></div>
+                            <p class="product-tag-item">Antioxidant</p>
+                            <div class="product-card-icons">
+                                <img src="images/jelly.png" alt="">
+                                <img src="images/tablet.png" alt="">
+                                <img src="images/tabletss.png" alt="">
+                            </div>
+                          </div>
+                          <div class="product-name-list">
+                            <div class="list-set">
+                              <div class="product-column">
+                                <div class="item">
+                                  <h5>Active Ingredient</h5>
+                                  <p>Corsolic acid</p>
+                                </div>
+                                <div class="item">
+                                  <h5>Standardization</h5>
+                                  <p>1%,2%</p>
+                                </div>
+                                <div class="item">
+                                  <h5>Scienticfic name</h5>
+                                  <p>Lagerstroemia speciosa</p>
+                                </div>
+                                <div class="item">
+                                  <h5>Origin material</h5>
+                                  <p>Banaba / leaf</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="list-set">
+                              <div class="product-column">
+                                <div class="item">
+                                  <h5>Country of origin</h5>
+                                  <p>India</p>
+                                 </div>
+                                <div class="item">
+                                  <h5>Recommended intake</h5>
+                                  <p>1mg per day as corosolic acid</p>
+                                 </div>
+                                <div class="item">
+                                  <h5>Form</h5>
+                                  <p>Powder type</p>
+                                 </div>
+                                <div class="item">
+                                  <h5>Characteristic</h5>
+                                  <p>Diabetes measures</p>
+                                  </div>
+                              </div>
+                            </div>
+                           
+                          </div>
+                        </div>
+                        <div class="product-content-hover-right">
+                          <img src="images/banaba-big.png" alt="" />
+                        </div>
+                      </div>
+                   <div><p class="product-grid-description">Since ancient times, tea made from banaba leaves has been drunk for its health benefits. It is still widely used today to prevent lifestyle habits. Banaba leaves used as tea do not contain caffeine, unlike regular tea leaves, and are rich in minerals and dietary fiber. Among them, corosolic acid contained in banaba leaves has been shown to have the effect of suppressing blood sugar rise, and is attracting attention as a countermeasure against diabetes.</p></div>
+                    <div class="readmore-link">
+                        <a href="#">Read More</a>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product-list-items">
+                    <div class="product-list-item">
+                        <div class="product-thumbnail-img">
+                            <img src="images/organic.png" alt="" />
+                          </div>
+                          <div class="product-content">
+                            <h4>Organic agave syrup</h4>
+                            <div class="product-tags">
+                              <p class="product-tag-item">Tannis</p>
+                              <div class="p_v_line"></div>
+                              <p class="product-tag-item">Amala</p>
+                              <div class="p_v_line"></div>
+                              <p>20% 40%</p>
+                            </div>
+                            <p class="tag-block">Antioxident</p>
+                          </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-thumbnail-img">
+                            <img src="images/margigold.png" alt="" />
+                          </div>
+                          <div class="product-content">
+                            <h4>Acerola Extract</h4>
+                            <div class="product-tags">
+                              <p class="product-tag-item">Tannis</p>
+                              <div class="p_v_line"></div>
+                              <p class="product-tag-item">Amala</p>
+                              <div class="p_v_line"></div>
+                              <p>20% 40%</p>
+                            </div>
+                            <p class="tag-block">Antioxident</p>
+                          </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-thumbnail-img">
+                            <img src="images/berry.png" alt="" />
+                          </div>
+                          <div class="product-content">
+                            <h4>Marigold extract</h4>
+                            <div class="product-tags">
+                              <p class="product-tag-item">Tannis</p>
+                              <div class="p_v_line"></div>
+                              <p class="product-tag-item">Amala</p>
+                              <div class="p_v_line"></div>
+                              <p>20% 40%</p>
+                            </div>
+                            <p class="tag-block">Antioxident</p>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product-list-items">
+                    <div class="product-list-item">
+                        <div class="product-thumbnail-img">
+                            <img src="images/garlic.png" alt="" />
+                          </div>
+                          <div class="product-content">
+                            <h4>Garlic Extract</h4>
+                            <div class="product-tags">
+                              <p class="product-tag-item">Tannis</p>
+                              <div class="p_v_line"></div>
+                              <p class="product-tag-item">Amala</p>
+                              <div class="p_v_line"></div>
+                              <p>20% 40%</p>
+                            </div>
+                            <p class="tag-block">Antioxident</p>
+                          </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-thumbnail-img">
+                            <img src="images/amla.png" alt="" />
+                          </div>
+                          <div class="product-content">
+                            <h4>Amla Extract</h4>
+                            <div class="product-tags">
+                              <p class="product-tag-item">Tannis</p>
+                              <div class="p_v_line"></div>
+                              <p class="product-tag-item">Amala</p>
+                              <div class="p_v_line"></div>
+                              <p>20% 40%</p>
+                            </div>
+                            <p class="tag-block">Antioxident</p>
+                          </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-thumbnail-img">
+                            <img src="images/banana.png" alt="" />
+                          </div>
+                          <div class="product-content">
+                            <h4>Banaba Extract</h4>
+                            <div class="product-tags">
+                              <p class="product-tag-item">Tannis</p>
+                              <div class="p_v_line"></div>
+                              <p class="product-tag-item">Amala</p>
+                              <div class="p_v_line"></div>
+                              <p>20% 40%</p>
+                            </div>
+                            <p class="tag-block">Antioxident</p>
+                          </div>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="row">
+                <div class="product-list-items">
+                    <div class="product-list-item">
+                        <div class="product-thumbnail-img">
+                            <img src="images/margigold.png" alt="" />
+                          </div>
+                          <div class="product-content">
+                            <h4>Acerola Extract</h4>
+                            <div class="product-tags">
+                              <p class="product-tag-item">Tannis</p>
+                              <div class="p_v_line"></div>
+                              <p class="product-tag-item">Amala</p>
+                              <div class="p_v_line"></div>
+                              <p>20% 40%</p>
+                            </div>
+                            <p class="tag-block">Antioxident</p>
+                          </div>
+                    </div>
+
+                    <div class="product-list-item">
+                        <div class="product-thumbnail-img">
+                            <img src="images/organic.png" alt="" />
+                          </div>
+                          <div class="product-content">
+                            <h4>Organic agave syrup</h4>
+                            <div class="product-tags">
+                              <p class="product-tag-item">Tannis</p>
+                              <div class="p_v_line"></div>
+                              <p class="product-tag-item">Amala</p>
+                              <div class="p_v_line"></div>
+                              <p>20% 40%</p>
+                            </div>
+                            <p class="tag-block">Antioxident</p>
+                          </div>
+                    </div>
+                  
+                    <div class="product-list-item">
+                        <div class="product-thumbnail-img">
+                            <img src="images/berry.png" alt="" />
+                          </div>
+                          <div class="product-content">
+                            <h4>Marigold extract</h4>
+                            <div class="product-tags">
+                              <p class="product-tag-item">Tannis</p>
+                              <div class="p_v_line"></div>
+                              <p class="product-tag-item">Amala</p>
+                              <div class="p_v_line"></div>
+                              <p>20% 40%</p>
+                            </div>
+                            <p class="tag-block">Antioxident</p>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="container">
+                  <div class="more-products-btn">
+                    <a href="#">More Products</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+   
+
+
+    <!-- Footer section -->
+
+    <Footer>
+        <!-- section-1 inquiry & subscription -->
+        <section>
+            <div class="inquiry-subcription">
+                <!-- <img src="images/footer-inquiry-bg.png" alt=""> -->
+              <div class="container">
+                <div class="inquiry-content">
+                    <h3>Inquiry & Subscription</h3>
+                    <p>Due to the spread of new coronavirus infections, the demand for products that enhance immunity is increasing worldwide.
+                        Herbal-derived immuno-stimulators are also expected to grow rapidly as consumers seek.</p>
+                    <div class="inquiry-btns">
+                        <a class="btn-subscription" href="#">Newsletter Subscription</a>
+                        <a class="btn-enquiry" href="#">Product Inquiry</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+         <!-- section-2 Quick Links -->
+
+         <section>
+         <div class="quick-links">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-sm-12 col-lg-3">
+                        <img src="images/bioactives-logo.png" alt="">
+                        <ul class="address">
+                            <li>Bio Actives Japan Co., Ltd</li>
+                            <li>BAJ Building 3F, 4-1-1 Minaminagaki<br>Toshima-ku, Tokyo 171-0052</li>
+                            <li><span>Phone:</span> 03-5981-0601</li>
+                            <li><span>Fax:</span> 03-5981-0602</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-lg-2">
+                        <h4>Solutions</h4>
+                        <ul>
+                            <li>Introduction of Raw Materials</li>
+                            <li>Concept Making</li>
+                            <li>Protype & Recipe</li>
+                            <li>OEM / PB</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-lg-2">
+                        <h4>Portfolio</h4>
+                        <ul>
+                            <li>Nutritional Ingredients</li>
+                            <li>Natural color</li>
+                            <li>Natural flavors</li>
+                            <li>Spices and oleoresins</li>
+                            <li>Functional beverages</li>
+                            <li>Proteins</li>
+                            <li>Performance ingredients</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-lg-2">
+                        <h4>Strength</h4>
+                        <ul>
+                            <li>Raw material procurement</li>
+                            <li>Quality management</li>
+                            <li>Sustainability</li>
+                            <li>Team structure</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-lg-2">
+                        <h4>About</h4>
+                        <ul>
+                            <li>SDGs</li>
+                            <li>History</li>
+                            <li>Company Profile</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </div>
+         </section>
+
+          <!-- section-3 copyright -->
+          <section>
+           <div class="copy-right">
+            <div class="container">
+                <div class="row  align-items-center">
+                    <div class=" col-8">
+                        <p>© Bio Actives Japan Corporation 2022. All Rights reserved   |  Privacy Policy</p>
+                    </div>
+                    <div class=" col-4 text-end">
+                        <a href="#">SiteMap</a>
+                    </div>
+                </div>
+            </div>
+           </div>
+          </section>
+    </Footer>
+
+
+
+
+
+
+
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var header = document.getElementById("header");
+        if (window.scrollY === 0) {
+          header.classList.remove("sticky");
+        } else {
+          header.classList.add("sticky");
+        }
+      });
+    </script>
+
+<script>
+    const select = document.querySelector(".cf-select");
+const options_list = document.querySelector(".cf-options-list");
+const options = document.querySelectorAll(".cf-option");
+
+//show & hide options list
+select.addEventListener("click", () => {
+options_list.classList.toggle("cf-active");
+select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+});
+  </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
