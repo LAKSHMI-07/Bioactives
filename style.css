@@ -957,7 +957,7 @@ display: none;
 
 a.drink-icon {
   position: relative;
-  width: 8.3%;
+  width: 98px;
 }
 
 img.drink-img {
@@ -1043,7 +1043,7 @@ nav.navbar.navbar-expand-lg {
     background-color: #ffffff1c;
     border-radius: 6px;
     border: 1.5px solid #ffffff40;
-    width: 22.5%;
+    width: 22.3%;
     height: 75px;
   }
 
@@ -1609,8 +1609,8 @@ img.product-close {
 }
 
   #portfnav > li {
-    width: 72px;
-    height: 75px;
+    width: 22%;
+    height: 70px;
 }
 }
 
