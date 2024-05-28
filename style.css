@@ -91,6 +91,8 @@ nav{
 }
 
 
+
+
 .dropdown-item:focus, .dropdown-item:hover{
     background-color: #399DA2;
     color: white;
@@ -104,6 +106,8 @@ nav{
 nav {
   background-color: #ffffff;
 }
+
+
 
 .navbar-toggler:focus {
   outline: none;
@@ -397,6 +401,17 @@ nav {
 }
 
 .navbar-nav .nav-link.active {
+  color: #399da2;
+  font-size: 14px;
+}
+
+.nav-link{
+  transition: all .3s ease;
+}
+
+.nav-link:hover{
+ 
+    transform: scale(1.2);
   color: #399da2;
 }
 
@@ -1007,7 +1022,7 @@ img.drink-img {
 
   #portfnav {
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 12px;
     padding: 20px 0px;
   }
 
