@@ -81,6 +81,10 @@ nav{
   box-shadow: -2px -1px 7px -3px rgb(0 0 0);
 }
 
+nav.navbar.navbar-expand-lg {
+  padding: 1rem 0rem;
+}
+
 .dropdown-menu{
     border: none;
     box-shadow: -2px -1px 7px -3px rgb(168 168 168 / 24%);
@@ -201,7 +205,7 @@ nav {
   }
   
   .pmenu {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 65%);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -758,7 +762,7 @@ display: none;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 20px;
+    row-gap: 24px;
     margin-bottom: 50px;
 }
 
@@ -998,6 +1002,11 @@ img.drink-img {
 }
 
 
+nav.navbar.navbar-expand-lg {
+  padding: 5px 0px;
+}
+
+
   .pverticalline {
     display: none;
   }
@@ -1081,7 +1090,7 @@ img.drink-img {
   }
 
   .mobile-inquiry-link {
-    font-size: 8px;
+    font-size: 9px;
     width: 40%;
     text-align: center;
     font-weight: 500;
@@ -1093,7 +1102,7 @@ img.drink-img {
   }
 
   .navbar-toggler-icon {
-    background-size: 70%;
+    background-size: 80%;
   }
 
   .mob-search {
@@ -1444,6 +1453,10 @@ img.product-close {
 
 @media only screen and (max-width: 600px)
 {
+
+  .nav-bar{
+    padding: 5px 0px;
+  }
 
   
   .banner-img {
