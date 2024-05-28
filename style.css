@@ -933,6 +933,17 @@ display: none;
     left: 40%;
 }
 
+a.drink-icon {
+  position: relative;
+  width: 8.3%;
+}
+
+img.drink-img {
+  position: absolute;
+  top: 6px;
+  left: 15px;
+}
+
 
 
 
