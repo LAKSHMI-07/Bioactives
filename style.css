@@ -1447,7 +1447,7 @@ img.product-close {
 
   
   .banner-img {
-    height: 60vh;
+    height: 50vh;
     object-fit: cover;
   }
 
@@ -1551,6 +1551,21 @@ img.product-close {
     font-size: 16px;
   }
  
+}
+
+
+@media only screen and (max-width: 359px)
+{
+
+  .banner-img {
+    height: 62vh;
+    object-fit: cover;
+}
+
+  #portfnav > li {
+    width: 72px;
+    height: 75px;
+}
 }
 
 
