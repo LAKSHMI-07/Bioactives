@@ -804,7 +804,7 @@ display: none;
 .product-card {
     border: 2px solid #399DA2;
     border-radius: 20px;
-    padding: 80px 60px;
+    padding: 80px 60px 40px 60px;
     margin-bottom: 50px;
     position: relative;
 }
