@@ -297,7 +297,7 @@ nav {
   
   .consumption-form-container {
     display: flex;
-    gap: 24px;
+    gap: 23px;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -962,8 +962,8 @@ a.drink-icon {
 
 img.drink-img {
   position: absolute;
-  top: 6px;
-  left: 15px;
+  top: 5px;
+  left: 18px;
 }
 
 
