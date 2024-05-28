@@ -1030,7 +1030,7 @@ img.drink-img {
     width: auto;
     background-color: #ffffff1c;
     border-radius: 6px;
-    border: 1.5px solid #ffffff69;
+    border: 1.5px solid #ffffff40;
     width: 75px;
     height: 75px;
   }
@@ -1447,7 +1447,7 @@ img.product-close {
 
   
   .banner-img {
-    height: 50vh;
+    height: 62vh;
     object-fit: cover;
   }
 
