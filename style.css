@@ -466,7 +466,7 @@ nav {
   transition: transform 0.3s ease; /* Apply transition to the transform property */
 }
 
-.nav-link:focus .bi-chevron-down {
+.nav-link.show .bi-chevron-down {
   transform: rotate(180deg);
 }
 
