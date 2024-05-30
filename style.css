@@ -118,7 +118,6 @@ nav {
   transform-origin: top;
   animation-fill-mode: forwards; 
   transform: scale(0.9, 0.7) translateY(-20px);
-  display: block; 
   transition: all 0.3s ease;
 }
 .dropdown-menu.show {
@@ -1093,6 +1092,42 @@ img.drink-img {
 
 nav.navbar.navbar-expand-lg {
   padding: 5px 0px;
+}
+
+.nav-link:hover {
+  transform: scale(1);
+  color: #399da2;
+}
+
+.offcanvas-body{
+  padding: 0;
+}
+
+li.nav-item {
+  padding-left: 25px;
+}
+
+.dropdown-menu{
+  box-shadow: none;
+}
+
+
+.dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform-origin: top;
+  animation-fill-mode: forwards; 
+  transform: scale(0.9, 0.7) translateY(-20px);
+  transition: all 0.3s ease;
+}
+.dropdown-menu.show {
+  transform: scale(1, 1) translateY(0);  
+  opacity: 1;
+  visibility: visible;
+}
+
+.search-box{
+  display: none;
 }
 
 
