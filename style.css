@@ -119,6 +119,7 @@ nav {
   animation-fill-mode: forwards; 
   transform: scale(0.9, 0.7) translateY(-20px);
   transition: all 0.3s ease;
+  display: block;
 }
 .dropdown-menu.show {
   transform: scale(1, 1) translateY(0);  
@@ -1119,11 +1120,14 @@ li.nav-item {
   animation-fill-mode: forwards; 
   transform: scale(0.9, 0.7) translateY(-20px);
   transition: all 0.3s ease;
+  display: none;
 }
+
 .dropdown-menu.show {
   transform: scale(1, 1) translateY(0);  
   opacity: 1;
   visibility: visible;
+  display: block;
 }
 
 .search-box{
