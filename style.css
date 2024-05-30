@@ -121,11 +121,19 @@ nav {
   transition: all 0.3s ease;
   display: block;
 }
+
 .dropdown-menu.show {
   transform: scale(1, 1) translateY(0);  
   opacity: 1;
   visibility: visible;
 }
+
+.nav-item:hover .dropdown-menu {
+  transform: scale(1, 1) translateY(0);  
+  opacity: 1;
+  visibility: visible;
+}
+
 
 
 
