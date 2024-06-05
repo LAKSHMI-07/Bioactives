@@ -18,7 +18,7 @@
   <body>
     <!-- Header Section -->
     <header id="header">
-      <nav class="navbar navbar-expand-lg">
+      <nav id="nav" class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img class="logo" src="images/bioactives-logo.png" alt="" />
@@ -27,8 +27,8 @@
             <button class="navbar-toggler mob-search" type="button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="14"
+                width="18"
+                height="18"
                 fill="currentColor"
                 class="bi bi-search"
                 viewBox="0 0 16 16"
@@ -76,11 +76,10 @@
                 class="navbar-nav justify-content-end align-items-lg-center flex-grow-1 pe-5"
               >
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a class="nav-link active" aria-current="page" href="index.html"
                     >Home</a
                   >
                 </li>
-                <li><div class="vline"></div></li>
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link"
@@ -120,7 +119,6 @@
                       </li>
                   </ul>
                 </li>
-                <li><div class="vline"></div></li>
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link"
@@ -146,7 +144,7 @@
                     </svg>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#"> Nutritional Ingredients</a></li>
+                    <li><a class="dropdown-item" href="product-details.html"> Nutritional Ingredients</a></li>
                     <li>
                       <a class="dropdown-item" href="#"> ⁠Natural color</a>
                     </li>
@@ -164,11 +162,9 @@
                       </li>
                   </ul>
                 </li>
-                <li><div class="vline"></div></li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Recipe</a>
+                  <a class="nav-link" href="recipe-list.html">Recipe</a>
                 </li>
-                <li><div class="vline"></div></li>
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link"
@@ -206,7 +202,7 @@
                       </li>
                   </ul>
                 </li>
-                <li><div class="vline"></div></li>
+                
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link"
@@ -268,7 +264,6 @@
 
 
 
-
     <!-- Banner section -->
     <section>
       <div class="product-details-banner">
@@ -276,7 +271,7 @@
         <div class="banner-text">
           <div class="container">
            <h3>Functional</h3>
-           <p><a href="index.html">Protfolio</a> > Functional > Turmeric extract (Turmeric Max®)</p>
+           <p><a href="index.html">Protfolio > Functional > <span>Turmeric extract (Turmeric Max®)</span></a></p>
           </div>
          </div>
       </div>
@@ -297,7 +292,6 @@
                         </div>
                             <div class="ingridents-list">
                                 <img class="product-img" src="images/product_details/turmeric.png" alt="">
-
                                 <!-- mobile buttons -->
                                <div class="mobile-screen">
                                 <div class="product-category-btn d-flex">
@@ -326,6 +320,11 @@
                                             <img src="images/product_details/sidedish.svg" alt="">
                                             <p>Side dish</p>
                                         </div>
+                                        <div class="consumptions-item text-center">
+                                          <img class="consumptions-item-disabled" src="images/product_details/noodles.svg" alt="">
+                                          <p>Noodles</p>
+                                      </div>
+                                     
                                     </div>
 
                                     
@@ -347,6 +346,10 @@
                                             <img src="images/product_details/bread.svg" alt="">
                                             <p>sweet bread</p>
                                         </div>
+                                        <div class="consumptions-item text-center">
+                                          <img class=".consumptions-item-disabled" src="images/product_details/alternativemeat.svg" alt="">
+                                          <p>Alternative Meat</p>
+                                      </div>
                                     </div>
                                 </div>
                                </div>
@@ -445,6 +448,14 @@
                                 <img src="images/product_details/bread.svg" alt="">
                                 <p>sweet bread</p>
                             </div>
+                            <div class="consumptions-item text-center">
+                              <img class="consumptions-item-disabled" src="images/product_details/noodles.svg" alt="">
+                              <p>Noodles</p>
+                          </div>
+                          <div class="consumptions-item text-center">
+                            <img class=".consumptions-item-disabled" src="images/product_details/alternativemeat.svg" alt="">
+                            <p>Alternative Meat</p>
+                        </div>
                         </div>
                         </div>
                         <div class="product-desc">
@@ -716,12 +727,16 @@
 
 
     <script>
-      window.addEventListener("scroll", function () {
+     window.addEventListener("scroll", function () {
         var header = document.getElementById("header");
+        var nav = document.getElementById("nav");
         if (window.scrollY === 0) {
           header.classList.remove("sticky");
+            nav.style.background = "rgb(255 255 255 / 90%)";
+            nav.style.transition = "background-color 0.3s ease";
         } else {
           header.classList.add("sticky");
+          nav.style.background = "#ffffff";
         }
       });
     </script>

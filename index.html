@@ -20,7 +20,7 @@
     <!-- Header Section -->
 
     <header id="header">
-      <nav class="navbar navbar-expand-lg">
+      <nav id="nav" class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img class="logo" src="images/bioactives-logo.png" alt="" />
@@ -78,11 +78,10 @@
                 class="navbar-nav justify-content-end align-items-lg-center flex-grow-1 pe-5"
               >
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a class="nav-link active" aria-current="page" href="index.html"
                     >Home</a
                   >
                 </li>
-                <li><div class="vline"></div></li>
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link"
@@ -122,7 +121,6 @@
                       </li>
                   </ul>
                 </li>
-                <li><div class="vline"></div></li>
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link"
@@ -148,7 +146,7 @@
                     </svg>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#"> Nutritional Ingredients</a></li>
+                    <li><a class="dropdown-item" href="product-details.html"> Nutritional Ingredients</a></li>
                     <li>
                       <a class="dropdown-item" href="#"> ⁠Natural color</a>
                     </li>
@@ -166,11 +164,9 @@
                       </li>
                   </ul>
                 </li>
-                <li><div class="vline"></div></li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Recipe</a>
+                  <a class="nav-link" href="recipe-list.html">Recipe</a>
                 </li>
-                <li><div class="vline"></div></li>
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link"
@@ -208,7 +204,7 @@
                       </li>
                   </ul>
                 </li>
-                <li><div class="vline"></div></li>
+                
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link"
@@ -271,11 +267,19 @@
     <!-- Banner section -->
     <div class="banner">
         <img class="banner-img" src="images/marigold-bg.png" alt="" />
+       <div class="webscreen">
+        <div class="banner-text">
+          <div class="container">
+           <h3>Portfolio</h3>
+           <p><a href="index.html">Portfolio >Home > <span>Turmeric extract (Turmeric Max®)</span></a></p>
+          </div>
+         </div>
+       </div>
         <div class="pmenu">
           <div class="container">
             <div class="portfmenu">
               <ul id="portfnav">
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a href="#">
                     <p class="pfmicon">
                       <img  class="eye-icon" src="images/category/all.png" />
@@ -506,16 +510,95 @@
           <i class="fas fa-angle-down"></i>
         </div>
         <div class="cf-options-list">
-          <div class="cf-option"><input type="checkbox">Drink</div>
-          <div class="cf-option"> <input type="checkbox">Jelly</div>
-          <div class="cf-option"> <input type="checkbox">Tablet</div>
-          <div class="cf-option"> <input type="checkbox">Alternative Meat</div>
-          <div class="cf-option"> <input type="checkbox">Water Soluble</div>
-          <div class="cf-option"> <input type="checkbox">Side Dish</div>
-          <div class="cf-option"> <input type="checkbox">Noodles</div>
-          <div class="cf-option"> <input type="checkbox"> Soluble</div>
-          <div class="cf-option"> <input type="checkbox">Soft Capsule</div>
-          <div class="cf-option"> <input type="checkbox">Hard Capsule</div>
+          <div class="consumption-form-container">
+            <a href="#">
+                <div class="icon-text-container">
+                    <span>ALL</span>
+                  </div>
+              </a>
+
+          <a class="drink-icon" href="#">
+            <div class="icon-text-container justify-content-end">
+                <img class="drink-img icon  i-gray"  width="23" height="23" src="images/consumption_form/Drink.svg" />
+                <img  class="drink-img icon i-white" src="images/consumption_form/drink-white.svg" />
+                <span>Drink</span>
+              </div>
+          </a>
+          
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon  i-gray" src="images/consumption_form/jelly.svg" />
+                <img  class="icon i-white" src="images/consumption_form/jelly-white.svg" />
+                <span>Jelly</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon  i-gray" src="images/consumption_form/Tablet.svg" />
+                <img  class="icon i-white" src="images/consumption_form/tablet-white.svg" />
+                <span>Tablet</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon  i-gray" src="images/consumption_form/alternativemeat.svg" />
+                <img  class="icon i-white" src="images/consumption_form/meat-white.svg" />
+                <span>Alternative Meat</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon i-gray" src="images/consumption_form/watersoluble.svg" />
+                <img  class="icon i-white" src="images/consumption_form/water-soluble-white.svg" />
+                <span>Water Soluble</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon i-gray" src="images/consumption_form/sidedish.svg" />
+                <img  class="icon i-white" src="images/consumption_form/sidedish-white.svg" />
+                <span>Side Dish</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon  i-gray" src="images/consumption_form/noodles.svg" />
+                <img  class="icon i-white" src="images/consumption_form/noodles-white.svg" />
+                <span>Noodles</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon  i-gray" src="images/consumption_form/oilsoluble.svg" />
+                <img  class="icon i-white" src="images/consumption_form/oil-white.svg" />
+                <span>Oil Soluble</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon  i-gray" src="images/consumption_form/softcapsule.svg" />
+                <img  class="icon i-white" src="images/consumption_form/soft-white.svg" />
+                <span>Soft Capsule</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon  i-gray" src="images/consumption_form/hardcapsule.svg" />
+                <img  class="icon i-white" src="images/consumption_form/hard-white.svg" />
+                <span>Hard Capsule</span>
+              </div>
+          </a>
+          
+
+        </div>
         </div>
       </div>
      </div>
@@ -531,7 +614,7 @@
           </div>
         </div>
         <div class="product-resut">
-          <p><span class="presult-count">50</span> Products Found</p>
+          <p class="para-product-resut"><span class="presult-count">50</span> <span class="presult-text">Products Found</span></p>
         </div>
       </div>
 
@@ -977,10 +1060,14 @@
     <script>
       window.addEventListener("scroll", function () {
         var header = document.getElementById("header");
+        var nav = document.getElementById("nav");
         if (window.scrollY === 0) {
           header.classList.remove("sticky");
+            nav.style.background = "rgb(255 255 255 / 90%)";
+            nav.style.transition = "background-color 0.3s ease";
         } else {
           header.classList.add("sticky");
+          nav.style.background = "#ffffff";
         }
       });
     </script>
