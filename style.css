@@ -78,7 +78,7 @@ header {
 }
 
 nav{
-  box-shadow: -2px -1px 7px -3px rgb(0 0 0);
+  box-shadow: 0px 3px 14px -4px rgba(0, 0, 0, 0.12);
 }
 
 nav.navbar.navbar-expand-lg {
@@ -132,7 +132,7 @@ nav {
   transform: scale(1, 1) translateY(0);  
   opacity: 1;
   visibility: visible;
-  background-color: rgb(233 237 234);
+  background-color: #ffffff;
 }
 
 
@@ -561,8 +561,12 @@ nav {
 }
 
 .consumptions-item-disabled{
-  filter: grayscale(1);
+  filter: opacity(0.6) grayscale(100%);
 }
+
+/* .cursor-disabled{
+  cursor: not-allowed;
+} */
 
 
 
@@ -726,20 +730,19 @@ display: none;
     /* Footer CSS */
 
     .inquiry-content h3{
-        color: #ffffff;
-        font-size: 37px;
-        font-weight: 800;
-        line-height: 23px;
-        margin-bottom: 20px;
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 23px;
+      margin-bottom: 20px;
     }
 
     .inquiry-content p{
-        color: #ffffff;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 30px;
-        margin-bottom: 30px;
-        padding: 0px 60px;
+      color: rgb(56 56 56 / 80%);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 30px;
+    padding: 0 21%;
     }
 
     .btn-subscription{
@@ -786,7 +789,7 @@ display: none;
 }
 
 .quick-links{
-    padding: 40px 0px;
+    padding: 70px 0px;
 }
 
 .quick-links img{
@@ -794,29 +797,34 @@ display: none;
 }
 
 .quick-links h4{
-    color: #037D88;
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    margin-top: 15px;
+  color: #037D88;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .quick-links li{
-    font-size: 13px;
-    color: #848588;
-    font-weight: 400;
-    margin-bottom: 10px;
+    font-size: 12px;
+    color: rgb(55 56 61/70%);
+    font-weight: 500;
+    margin-bottom: 4px;
+    width: 88%;
 }
 
 
 .address li{
     color: #626166;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
 }
 
 .quick-links li span{
     color: #3B9B9F;
+}
+
+.footer-border{
+  border-right: 1px solid #D9D9D9;
+  margin-right: 30px;
 }
 
 .copy-right{
@@ -1211,6 +1219,100 @@ img.drink-img {
   opacity: 1;
 }
 
+.recipe-details-title{
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 20px;
+  color: #2E5974;
+  text-align: left;
+  margin: 20px 0px;
+}
+
+.recipe-items-title {
+  width: 220px;
+  font-size: 14px;
+    font-weight: 800;
+    color: #2e5974;
+}
+
+.recipe-desc h3{
+font-size: 17px;
+font-weight: 700;
+line-height: 24px;
+color:#5f6064;
+margin-bottom: 16px;
+}
+
+.recipe-desc p{
+  font-size: 13px;
+  font-weight: 400;
+  color: #5f6064;
+  line-height: 24px;
+}
+
+.recipe-desc h4{
+font-size: 18px;
+font-weight: 600;
+color: #2E5974;
+margin-bottom: 1rem;
+}
+
+
+.recipe-desc ol li{
+  color: #5f6064;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.custom-list {
+  counter-reset: new-counter;
+  /* border-left: dashed #5DADB1; */
+  padding-left: 21px;
+  margin-left: 10px;
+}
+
+.custom-list li {
+  position: relative;
+}
+
+
+.custom-list li:after {
+  content: counter(new-counter, decimal);
+  counter-increment: new-counter;
+  position: absolute;
+  color: #fff;
+  top: 6px;
+  left: -25px;
+ 
+}
+
+
+
+.custom-list.style2 li:after {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+}
+
+.custom-list.style2 li:before {
+  position: absolute;
+  top: 2px;
+  left: -32px;
+  content: '';
+  width: 20px;
+  height: 20px;
+  z-index: 0;
+  border-radius: 50%;
+  background: #5DADB1;
+}
+
+.recipe-details-heading{
+  color:#5DADB1 ;
+}
+
+
 
 
 
@@ -1248,7 +1350,6 @@ img.drink-img {
 
 
 @media Only screen and (max-width: 990px)
-
 {
 
 /* Product Listing css */
@@ -1485,7 +1586,7 @@ display: block;
 }
 
 .mobile-screen h1{
-font-size: 24px;
+font-size: 23px;
 line-height: 30px;
 }
 
@@ -1512,7 +1613,7 @@ line-height: 30px;
 
 .product-category-btn button{
     font-size: 11px;
-    padding: 2px 13px;
+    padding: 2px 10px;
 }
 
 .pd-consumption-form{
@@ -1787,7 +1888,6 @@ img.product-close {
 }
 
 
-
 @media only screen and (max-width: 600px)
 {
 
@@ -2032,6 +2132,37 @@ overflow: hidden;
 .recipe-list .more-products-btn {
   margin: 20px 10px 20px 10px;
 }
+
+.recipe-details-title{
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 20px;
+  color: #2E5974;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.quick-links {
+  padding: 25px 0px;
+}
+
+.footer-contact-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quick-links ul{
+  margin-bottom: 25px;
+}
+
+.quick-links li {
+  width: auto;
+}
+
+.recipe-details-heading{
+  font-size: 20px;
+}
+
  
 }
 

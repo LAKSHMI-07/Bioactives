@@ -21,7 +21,7 @@
       <nav id="nav" class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img class="logo" src="images/bioactives-logo.png" alt="" />
+            <img class="logo" src="images/Bio-actives-logo.png" alt="" />
           </a>
           <div class="mobile-header-items">
             <button class="navbar-toggler mob-search" type="button">
@@ -258,7 +258,7 @@
         </div>
       </nav>
       <div class="container">
-        <a class="inquiry-link" href="#">Product Inquiry</a>
+        <a id="inq-link" class="inquiry-link" href="#">Product Inquiry</a>
       </div>
     </header>
    
@@ -786,7 +786,6 @@
 
     
     <!-- Footer section -->
-
     <Footer>
       <!-- section-1 inquiry & subscription -->
       <section>
@@ -812,8 +811,7 @@
        <div class="quick-links">
           <div class="container">
               <div class="row justify-content-between">
-                  <div class="col-sm-12 col-lg-3">
-                      <img src="images/bioactives-logo.png" alt="">
+                  <div class="col-sm-12 col-lg-3 footer-border">
                       <ul class="address">
                           <li>Bio Actives Japan Co., Ltd</li>
                           <li>BAJ Building 3F, 4-1-1 Minaminagaki<br>Toshima-ku, Tokyo 171-0052</li>
@@ -826,7 +824,7 @@
                   <div class="col-sm-12 col-lg-2">
                       <h4>Solutions</h4>
                       <ul>
-                          <li>Introduction of Raw Materials</li>
+                          <li>Raw Materials</li>
                           <li>Concept Making</li>
                           <li>Protype & Recipe</li>
                           <li>OEM / PB</li>
@@ -888,22 +886,25 @@
 
 
 
-
-
   <script>
     window.addEventListener("scroll", function () {
-        var header = document.getElementById("header");
-        var nav = document.getElementById("nav");
-        if (window.scrollY === 0) {
-          header.classList.remove("sticky");
-            nav.style.background = "rgb(255 255 255 / 90%)";
-            nav.style.transition = "background-color 0.3s ease";
-        } else {
-          header.classList.add("sticky");
-          nav.style.background = "#ffffff";
-        }
-      });
-  </script>
+       var header = document.getElementById("header");
+       var nav = document.getElementById("nav");
+       var inqLink = document.getElementById("inq-link");
+
+       if (window.scrollY === 0) {
+         header.classList.remove("sticky");
+           nav.style.background = "rgb(255 255 255 / 90%)";
+           nav.style.transition = "background-color 0.3s ease";
+           inqLink.style.background = "rgb(255 255 255 / 90%)";
+           ninqLinkav.style.transition = "background-color 0.3s ease";
+       } else {
+         header.classList.add("sticky");
+         nav.style.background = "#ffffff";
+         inqLink.style.background = "#ffffff";
+       }
+     });
+   </script>
 
 <script>
   const select = document.querySelector(".cf-select");
