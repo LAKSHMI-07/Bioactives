@@ -1187,7 +1187,7 @@ img.drink-img {
 }
 
 .recipe-list-item .card:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
   padding: 14px;
   border: 2px solid #4EA3A7;
   
