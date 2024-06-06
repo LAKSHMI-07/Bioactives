@@ -1129,10 +1129,9 @@ img.drink-img {
 
 .recipe-list-item .card-body h5{
   color: #2E5974;
-  font-size: 14px;
+  font-size: 13.9px;
   font-weight: bold;
-  /* margin-bottom: 30px; */
-  /* transition: margin-bottom 2s ease; */
+ 
 }
 
 .recipe-list-item .card-body p{
@@ -1141,8 +1140,7 @@ img.drink-img {
   font-weight: 500;
   margin-bottom: 5px;
   opacity: 0;
-  transition: opacity 1s ease;
-  transition: margin-bottom 1s ease;
+  transition: opactiy 1s ease;
 }
 
 .recipe-list-item .card-body a{
@@ -1152,22 +1150,23 @@ img.drink-img {
   font-weight: bold;
   display: flex;
   gap: 7px;
-  opacity: 0;
   transition: opacity 1s ease;
 }
 
 
-.recipe-list-item .card:hover .card-body p{
-  margin-top: 10px;
-}
-
-.recipe-list-item .card{
+.recipe-list-item .card {
   position: relative;
   height: 196px;
   overflow: hidden;
-  border: 0.8px solid 0.8px solid rgb(130 130 130/40%);
-  transition: height 1s ease, border 1s ease, padding 1s ease, border-color 1s ease, width 1s ease;
-  transition: transform 1s;
+  border: 0.8px solid rgb(130 130 130 / 40%);
+  transition: 
+  height 1s ease, 
+  border 1s ease, 
+  border-color 1s ease,
+  border-color 1s ease,
+  padding 1s ease,  
+  width 1s ease,
+  transform 1s ease;
 }
 
 .recipe-list-item .card-body{
@@ -1179,7 +1178,7 @@ img.drink-img {
   transition: top 1s ease;
 }
 
-.recipe-list-item .card img{
+.recipe-list-item .card img {
   width: 100%;
   transition: height 1s ease;
   border-top-left-radius: 5px;
@@ -1187,38 +1186,36 @@ img.drink-img {
   transition: all 1s ease;
 }
 
-.recipe-list-item .card:hover{
+.recipe-list-item .card:hover {
   transform: scaleY(1.06);
   padding: 14px;
   border: 2px solid #4EA3A7;
-  width: calc(100% + 40px); /* Adjust the value as needed */
-  margin-left: calc(-40px / 2); /* Half of the added width */
-  margin-right: calc(-0px / 2); /* Half of the added width */
+  
 }
 
-.recipe-list-item .card:hover img{
+.recipe-list-item .card:hover img {
   height: 50%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   object-fit: cover;
-
 }
 
-.recipe-list-item .card:hover .card-body{
+.recipe-list-item .card:hover .card-body {
   top: unset;
   bottom: 0;
-  left: 13px;
-  padding: 10px 20px 10px 10px;
+  width: 100%;
+    left: 0;
 }
 
-.recipe-list-item .card:hover .card-body p{
+.recipe-list-item .card:hover .card-body p {
   opacity: 1;
 }
 
 
-.recipe-list-item .card:hover .card-body a{
-  opacity: 1;
-}
+
+
+
+
 
 .recipe-details-title{
   font-size: 17px;
