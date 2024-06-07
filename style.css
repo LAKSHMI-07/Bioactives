@@ -2039,9 +2039,9 @@ margin: 0;
 
 .recipe-list-item .card:hover{
   transform: scaleY(1);
-  padding: 7px;
+  /* padding: 7px; */
   height: 170px;
-  border: 2px solid #4EA3A7;
+  /* border: 2px solid #4EA3A7; */
   width: 100%; /* Adjust the value as needed */
   margin-left: unset; /* Half of the added width */
   margin-right: unset; /* Half of the added width */
@@ -2053,6 +2053,10 @@ margin: 0;
   border-top-right-radius: 5px;
   object-fit: cover;
 
+}
+
+.recipe-list-item .card:hover .card-body {
+  transform: translateY(0);
 }
 
 .recipe-list-item .card-body p{
