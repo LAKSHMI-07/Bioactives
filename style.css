@@ -82,7 +82,7 @@ nav{
 }
 
 nav.navbar.navbar-expand-lg {
-  padding: 1rem 0rem;
+  padding: 0rem 0rem;
 }
 
 .dropdown-menu{
@@ -1140,7 +1140,7 @@ img.drink-img {
   font-weight: 500;
   margin-bottom: 5px;
   opacity: 0;
-  transition: opactiy 1s ease;
+  transition: opactiy 0.5s ease;
 }
 
 .recipe-list-item .card-body a{
@@ -1150,23 +1150,32 @@ img.drink-img {
   font-weight: bold;
   display: flex;
   gap: 7px;
-  transition: opacity 1s ease;
+  transition: opacity 0.5s ease;
 }
 
 
 .recipe-list-item .card {
+  justify-content: center;
+  align-items: center;
   position: relative;
   height: 196px;
   overflow: hidden;
   border: 0.8px solid rgb(130 130 130 / 40%);
+  outline: 2px solid #ffff;
   transition: 
-  height 1s ease, 
-  border 1s ease, 
+  height 0.5s ease,  
   border-color 1s ease,
-  border-width 1s ease,
-  padding 1s ease,  
-  width 1s ease,
-  transform 1s ease;
+  transform 0.5s ease,
+  outline-color 1s ease,
+  padding 0.5s ease;
+}
+
+.recipe-list-item .card-body-wrapper {
+  height: 100%;
+  width: 100%;
+  transition: 
+    width 0.5s ease,
+    height 0.5s ease;
 }
 
 .recipe-list-item .card-body{
@@ -1175,37 +1184,36 @@ img.drink-img {
   background-color: #ffffff;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  transition: top 1s ease;
+  transition: 
+    transform 0.5s ease, 
+    width 0.5s ease, 
+    left 0.5s ease;
+    
 }
 
 .recipe-list-item .card img {
   width: 100%;
-  transition: height 1s ease;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 .recipe-list-item .card:hover {
+  border-color: #fff;
+  outline: 2px solid #399DA2;
   transform: scale(1.1);
-  padding: 14px;
-  border: 2px solid #4EA3A7;
-  
 }
 
-.recipe-list-item .card:hover img {
-  height: 50%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  object-fit: cover;
-  object-position: center center;
+.recipe-list-item .card:hover .card-body-wrapper {
+  padding: 10px; 
 }
+
+
 
 .recipe-list-item .card:hover .card-body {
-  top: unset;
-  bottom: 0;
+  transform: translateY(-66px);
   width: 100%;
-    left: 0;
+  left: 0;
 }
 
 .recipe-list-item .card:hover .card-body p {
@@ -1360,7 +1368,7 @@ margin-bottom: 1rem;
 
 
 nav.navbar.navbar-expand-lg {
-  padding: 5px 0px;
+  padding: 0px 0px;
 }
 
 .nav-link:hover {
@@ -1848,6 +1856,11 @@ img.product-close {
   grid-template-columns: repeat(auto-fit, minmax(204px, 1fr));
 }
 
+.recipe-list-banner {
+  background-color: rgb(176 176 176 / 30%);
+}
+
+
 
 }
 
@@ -1980,61 +1993,6 @@ margin: 0;
   margin-right: 8px;
 }
 
-  .cf-select-menu {
-    width: 100%;
-    cursor: pointer;
-    position: relative;
-  }
-
-  .cf-select {
-    padding: 15px;
-    color: #399da2;
-    font-weight: 600;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 2px solid #399da2;
-    font-size: 14px;
-  }
-
-  .cf-options-list {
-    position: absolute;
-    width: 100%;
-    background-color: #ffffff;
-    border-radius: 6px;
-    margin-top: 14px;
-    max-height: 190px;
-    overflow-y: auto;
-    transition: 0.4s linear 0.2s;
-    height: 0;
-   
-  }
-
-  .cf-option {
-    padding: 12px 20px;
-    font-weight: 500;
-    font-size: 14px;
-    transition: 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    border-bottom: 1px solid #d3d3d342;
-  }
-
-  .cf-options-list::-webkit-scrollbar {
-   display: none;
-  }
-/* 
-  .cf-options-list::-webkit-scrollbar-thumb {
-    background-color: #399da2;
-  } */
-
-  .cf-options-list.cf-active {
-    height: 180px;
-    border: 2px solid #399da2;
-    z-index: 1;
-  }
 
   .product-result-set {
     align-items: flex-end;
@@ -2070,11 +2028,11 @@ margin: 0;
 
 .recipe-list-item .card{
   position: relative;
-  height: 158px;
+  height: 170px;
   overflow: hidden;
   border: 0.8px solid 0.8px solid rgb(130 130 130/40%);
-  transition: height 0.4s, border 0.4s, padding 0.s4, border-color 0.4s, width 0.4s ease;;
-  transition: transform 0.3s;
+  transition: height 0.4s, border 0.4s, padding 0.s4, border-color 0.4s, border-width 0.4s, width 0.4s ease;
+  transition: transform 0.4s;
 }
 
 
@@ -2082,7 +2040,7 @@ margin: 0;
 .recipe-list-item .card:hover{
   transform: scaleY(1);
   padding: 7px;
-  height: 158px;
+  height: 170px;
   border: 2px solid #4EA3A7;
   width: 100%; /* Adjust the value as needed */
   margin-left: unset; /* Half of the added width */
@@ -2111,7 +2069,7 @@ margin: 0;
   top: 105px;
   bottom: unset;
   left: unset;
-  padding: 16px 10px 16px 10px;
+  padding: 10px 10px 16px 10px;
   position: absolute;
 height: 55px;
 width: 100%;
@@ -2122,7 +2080,7 @@ overflow: hidden;
   top: 105px;
   bottom: unset;
   left: unset;
-  padding: 16px 15px 16px 0px;
+  padding: 10px 15px 16px 0px;
   width: 100%;
 height: 55px;
 overflow: hidden;
@@ -2162,11 +2120,20 @@ overflow: hidden;
   font-size: 20px;
 }
 
+.recipe-desc h3 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #5f6064;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
  
 }
 
 
-@media only screen and (max-width: 349px)
+@media only screen and (max-width: 359px)
 {
 
   .banner-img {
@@ -2179,13 +2146,17 @@ overflow: hidden;
     height: 70px;
 }
 
+.para-product-resut{
+  gap: 3px;
+}
+
 .recipe-list-items{
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));  
 }
 
 .recipe-list-item .card-body h5 {
   color: #2E5974;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
 }
 
