@@ -503,6 +503,109 @@
     </div>
    </div>
 
+   <!-- Mobile consumption form Dropdown -->
+
+   
+   <div class="consumption-form-mobile">
+    <div class="container">
+     <div class="consumption-form-dropdown">
+        <h2 id="cf-mobile-title" class="cf-mobile-title">Consumption Form <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+        </svg></span></h2>
+        <div class="consumption-dropdown-container">
+          <div class="consumption-form-container">
+            <a href="#">
+                <div class="icon-text-container">
+                    <span>ALL</span>
+                  </div>
+              </a>
+
+          <a class="drink-icon" href="#">
+            <div class="icon-text-container justify-content-end">
+                <img class="drink-img icon  i-gray"  width="23" height="23" src="images/consumption_form/Drink.svg" />
+                <img  class="drink-img icon i-white" src="images/consumption_form/drink-white.svg" />
+                <span>Drink</span>
+              </div>
+          </a>
+          
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon  i-gray" src="images/consumption_form/jelly.svg" />
+                <img  class="icon i-white" src="images/consumption_form/jelly-white.svg" />
+                <span>Jelly</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon  i-gray" src="images/consumption_form/Tablet.svg" />
+                <img  class="icon i-white" src="images/consumption_form/tablet-white.svg" />
+                <span>Tablet</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon  i-gray" src="images/consumption_form/alternativemeat.svg" />
+                <img  class="icon i-white" src="images/consumption_form/meat-white.svg" />
+                <span>Alternative Meat</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon i-gray" src="images/consumption_form/watersoluble.svg" />
+                <img  class="icon i-white" src="images/consumption_form/water-soluble-white.svg" />
+                <span>Water Soluble</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon i-gray" src="images/consumption_form/sidedish.svg" />
+                <img  class="icon i-white" src="images/consumption_form/sidedish-white.svg" />
+                <span>Side Dish</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon  i-gray" src="images/consumption_form/noodles.svg" />
+                <img  class="icon i-white" src="images/consumption_form/noodles-white.svg" />
+                <span>Noodles</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon  i-gray" src="images/consumption_form/oilsoluble.svg" />
+                <img  class="icon i-white" src="images/consumption_form/oil-white.svg" />
+                <span>Oil Soluble</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon  i-gray" src="images/consumption_form/softcapsule.svg" />
+                <img  class="icon i-white" src="images/consumption_form/soft-white.svg" />
+                <span>Soft Capsule</span>
+              </div>
+          </a>
+
+          <a href="#">
+            <div class="icon-text-container">
+                <img  class="icon  i-gray" src="images/consumption_form/hardcapsule.svg" />
+                <img  class="icon i-white" src="images/consumption_form/hard-white.svg" />
+                <span>Hard Capsule</span>
+              </div>
+          </a>
+          
+
+        </div>
+        </div>
+     </div>
+    </div>
+   </div>
    
 
    <!-- Product Filter Section-->
@@ -949,6 +1052,25 @@
            </div>
           </section>
     </Footer>
+
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const title = document.getElementById('cf-mobile-title');
+    const dropdown = document.querySelector('.consumption-dropdown-container');
+    const svgIcon = title.querySelector('svg');
+
+    title.addEventListener('click', function() {
+        if (dropdown.classList.contains('expanded')) {
+            dropdown.classList.remove('expanded');
+        } else {
+            dropdown.classList.add('expanded');
+        }
+        svgIcon.classList.toggle('rotate');
+    });
+});
+
+
+    </script>
 
     <script>
       window.addEventListener("scroll", function () {
