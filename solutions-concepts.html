@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Concept Making</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link rel="stylesheet" href="style.css" />
+    <script src="custom.js"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header id="header">
+      <nav id="nav" class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="images/main-logo.png" alt="" />
+          </a>
+          <div class="mobile-header-items">
+            <button class="navbar-toggler mob-search" type="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+            </button>
+
+            <div class="mob-search-border"></div>
+            <button class="navbar-toggler mobile-inquiry-link" type="button">
+              Product Inquiry
+            </button>
+            <div class="mob-search-border"></div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img src="images/bioactives-logo.png" alt="">
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-end align-items-lg-center flex-grow-1 pe-5"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link active"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    id="dropdownMenuButton"
+                  >
+                    Solution
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      fill="currentColor"
+                      class="bi bi-chevron-down"
+                      viewBox="0 0 16 16"
+                      id="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item " href="solution-raw-materials.html">Introduction of Raw 
+                        Materials</a></li>
+                    <li>
+                      <a class="dropdown-item active" href="solutions-concepts.html">Concept Making</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Protype & Recipe</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">OEM / PB</a>
+                      </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Portfolio
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      fill="currentColor"
+                      class="bi bi-chevron-down rotate-icon"
+                      viewBox="0 0 16 16"
+                      id="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item " href="index.html"> Nutritional Ingredients</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#"> ⁠Natural color</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">⁠Natural flavors</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Spices and oleoresins</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Proteins</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">⁠Performance ingredients</a>
+                      </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="recipe-list.html">Recipe</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Strength
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      fill="currentColor"
+                      class="bi bi-chevron-down rotate-icon"
+                      viewBox="0 0 16 16"
+                      id="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Raw material procurement</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Quality management</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Sustainability</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Team structure</a>
+                      </li>
+                  </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    About
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      fill="currentColor"
+                      class="bi bi-chevron-down rotate-icon"
+                      viewBox="0 0 16 16"
+                      id="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">SDGs</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">History</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Company Profile</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="search-box">
+                <div class="search-border"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <a id="inq-link" class="inquiry-link" href="#">Product Inquiry</a>
+      </div>
+    </header>
+
+
+
+    <!-- Banner section -->
+    <section>
+      <div class="product-details-banner">
+        <img src="images/marigold-bg.png" alt="" />
+        <div class="banner-text">
+          <div class="container">
+           <h3>Concept Making</h3>
+           <p><a href="index.html">Home > </a><a href="#">solution</a><span> > Concept Making</span></p>
+          </div>
+         </div>
+      </div>
+    </section>
+
+    <!-- Section-1 -->
+   <section>
+    <div class="container">
+        <div class="solutions raw-materials">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">Literature survey</button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">Market research</button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">Functional Foods</button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">Original human clinical data</button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="solution-tab-content">
+                        <div class="row align-items-center solutions-content-row">
+                            <div class="col-md-6">
+                                <img src="images/solutions/functional-ing.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Literature survey</h3>
+                                <p>If you are looking to handle functional ingredients from India, leave it to us, who have contracted farmers and manufacturing plants in the area. We have a wide lineup of functional ingredients that can be added to general foods, including our main ingredients turmeric extract and marigold extract (lutein). </p>
+                              <p>  We also focus on importing and selling ingredients that are grown and produced only in India, as well as in the United States, Europe, Brazil, Southeast Asia, and other areas. Utilizing our global network, we are able to procure ingredients that are not currently available.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="solution-tab-content">
+                        <div class="row align-items-center solutions-content-row">
+                            <div class="col-md-6">
+                                <img src="images/solutions/functional-ing.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Market research</h3>
+                                <p>If you are looking to handle functional ingredients from India, leave it to us, who have contracted farmers and manufacturing plants in the area. We have a wide lineup of functional ingredients that can be added to general foods, including our main ingredients turmeric extract and marigold extract (lutein). </p>
+                              <p>  We also focus on importing and selling ingredients that are grown and produced only in India, as well as in the United States, Europe, Brazil, Southeast Asia, and other areas. Utilizing our global network, we are able to procure ingredients that are not currently available.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="solution-tab-content">
+                        <div class="row align-items-center solutions-content-row">
+                            <div class="col-md-6">
+                                <img src="images/solutions/functional-ing.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Functional Foods</h3>
+                                <p>If you are looking to handle functional ingredients from India, leave it to us, who have contracted farmers and manufacturing plants in the area. We have a wide lineup of functional ingredients that can be added to general foods, including our main ingredients turmeric extract and marigold extract (lutein). </p>
+                              <p>  We also focus on importing and selling ingredients that are grown and produced only in India, as well as in the United States, Europe, Brazil, Southeast Asia, and other areas. Utilizing our global network, we are able to procure ingredients that are not currently available.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="solution-tab-content">
+                        <div class="row align-items-center solutions-content-row">
+                            <div class="col-md-6">
+                                <img src="images/solutions/functional-ing.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Original human clinical data</h3>
+                                <p>If you are looking to handle functional ingredients from India, leave it to us, who have contracted farmers and manufacturing plants in the area. We have a wide lineup of functional ingredients that can be added to general foods, including our main ingredients turmeric extract and marigold extract (lutein). </p>
+                              <p>  We also focus on importing and selling ingredients that are grown and produced only in India, as well as in the United States, Europe, Brazil, Southeast Asia, and other areas. Utilizing our global network, we are able to procure ingredients that are not currently available.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+   </section>
+
+    <!-- Footer section -->
+    <Footer>
+      <!-- section-1 inquiry & subscription -->
+      <section>
+          <div class="inquiry-subcription">
+              <!-- <img src="images/footer-inquiry-bg.png" alt=""> -->
+            <div class="container">
+              <div class="inquiry-content">
+                  <h3>Inquiry & Subscription</h3>
+                  <p>Due to the spread of new coronavirus infections, the demand for products that enhance immunity is increasing worldwide.
+                      Herbal-derived immuno-stimulators are also expected to grow rapidly as consumers seek.</p>
+                  <div class="inquiry-btns">
+                      <a class="btn-subscription" href="#">Newsletter Subscription</a>
+                      <a class="btn-enquiry" href="#">Product Inquiry</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+       <!-- section-2 Quick Links -->
+
+       <section>
+       <div class="quick-links">
+          <div class="container">
+              <div class="row justify-content-between">
+                  <div class="col-sm-12 col-lg-3 footer-border">
+                      <ul class="address">
+                          <li>Bio Actives Japan Co., Ltd</li>
+                          <li>BAJ Building 3F, 4-1-1 Minaminagaki<br>Toshima-ku, Tokyo 171-0052</li>
+                          <div class="footer-contact-info">
+                            <li><span>Phone:</span> 03-5981-0601</li>
+                            <li><span>Fax:</span> 03-5981-0602</li>
+                          </div>
+                      </ul>
+                  </div>
+                  <div class="col-sm-12 col-lg-2">
+                      <h4>Solutions</h4>
+                      <ul>
+                          <li>Raw Materials</li>
+                          <li>Concept Making</li>
+                          <li>Protype & Recipe</li>
+                          <li>OEM / PB</li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-12 col-lg-2">
+                      <h4>Portfolio</h4>
+                      <ul>
+                          <li>Nutritional Ingredients</li>
+                          <li>Natural color</li>
+                          <li>Natural flavors</li>
+                          <li>Spices and oleoresins</li>
+                          <li>Functional beverages</li>
+                          <li>Proteins</li>
+                          <li>Performance ingredients</li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-12 col-lg-2">
+                      <h4>Strength</h4>
+                      <ul>
+                          <li>Raw material procurement</li>
+                          <li>Quality management</li>
+                          <li>Sustainability</li>
+                          <li>Team structure</li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-12 col-lg-2">
+                      <h4>About</h4>
+                      <ul>
+                          <li>SDGs</li>
+                          <li>History</li>
+                          <li>Company Profile</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+       </div>
+       </section>
+
+        <!-- section-3 copyright -->
+        <section>
+         <div class="copy-right">
+          <div class="container">
+              <div class="row  align-items-center">
+                  <div class=" col-8">
+                      <p>© Bio Actives Japan Corporation 2022. All Rights reserved   |  Privacy Policy</p>
+                  </div>
+                  <div class=" col-4 text-end">
+                      <a href="#">SiteMap</a>
+                  </div>
+              </div>
+          </div>
+         </div>
+        </section>
+  </Footer>
+
+
+
+
+
+
+
+
+  <script>
+    window.addEventListener("scroll", function () {
+       var header = document.getElementById("header");
+       var nav = document.getElementById("nav");
+       var inqLink = document.getElementById("inq-link");
+
+       if (window.scrollY === 0) {
+         header.classList.remove("sticky");
+           nav.style.background = "rgb(255 255 255 / 90%)";
+           nav.style.transition = "background-color 0.3s ease";
+           inqLink.style.background = "rgb(255 255 255 / 90%)";
+           ninqLinkav.style.transition = "background-color 0.3s ease";
+       } else {
+         header.classList.add("sticky");
+         nav.style.background = "#ffffff";
+         inqLink.style.background = "#ffffff";
+       }
+     });
+   </script>
+
+    <script>
+      const select = document.querySelector(".cf-select");
+const options_list = document.querySelector(".cf-options-list");
+const options = document.querySelectorAll(".cf-option");
+
+//show & hide options list
+select.addEventListener("click", () => {
+  options_list.classList.toggle("cf-active");
+  select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+});
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -88,10 +88,20 @@ nav.navbar.navbar-expand-lg {
 .dropdown-menu{
     border: none;
     box-shadow: -2px -1px 7px -3px rgb(168 168 168 / 24%);
+    transition: 0.5s;
+}
+
+.dropdown-item{
+  transition: 0.5s;
 }
 
 .dropdown-item{
   margin: 8px 0px;
+}
+
+.dropdown-menu .active{
+  background-color: #399DA2;
+    color: white;
 }
 
 
@@ -477,21 +487,21 @@ nav {
   font-weight: 600;
 }
 
-.nav-link{
+header .nav-link{
   transition: all .3s ease;
 }
 
-.nav-link:hover{
+header .nav-link:hover{
  
     transform: scale(1.2);
   color: #399da2;
 }
 
-.nav-item .rotate-icon {
+header .nav-item .rotate-icon {
   transition: transform 0.3s ease; 
 }
 
-.nav-link.show .bi-chevron-down {
+header .nav-link.show .bi-chevron-down {
   transform: rotate(180deg);
 }
 
@@ -1321,6 +1331,75 @@ margin-bottom: 1rem;
 
 
 
+/* solution Page */
+
+.solutions{
+  margin: 35px 0px;
+}
+
+
+.solution-tab-content{
+  margin: 80px 0px;
+}
+
+.solutions h3{
+  color: #399DA2;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 54px;
+  padding: 0px 37px;
+}
+
+.solutions p{
+  color: #383838;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+  padding: 0px 37px;
+}
+
+.solutions .carousel-indicators {
+  position: unset;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  list-style: none;
+}
+
+.solutions .carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 20%;
+    height: auto;
+    padding: 10px 12px;
+    margin-right: 0px;
+    margin-left: 0px;
+    text-indent: unset;
+    cursor: pointer;
+    background-color: #399DA2;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 6px;
+    background-clip: border-box;
+    border: 0;
+    border-top: none;
+    border-bottom: none;
+    opacity: 1;
+    transition: opacity .6s ease;
+}
+
+
+
+
+
 
 
 
@@ -1367,11 +1446,11 @@ margin-bottom: 1rem;
 }
 
 
-nav.navbar.navbar-expand-lg {
+header nav.navbar.navbar-expand-lg {
   padding: 0px 0px;
 }
 
-.nav-link:hover {
+header .nav-link:hover {
   transform: scale(1);
   color: #399da2;
 }
@@ -1380,7 +1459,7 @@ nav.navbar.navbar-expand-lg {
   padding: 0;
 }
 
-li.nav-item {
+header li.nav-item {
   padding-left: 25px;
 }
 
@@ -1576,7 +1655,7 @@ li.nav-item {
   .banner-text a {
     font-size: 11px;
     font-weight: 500;
-    color: #ffffff;
+    color: rgb(255 255 255 / 60%);
     margin: 0;
   }
 
@@ -1900,7 +1979,7 @@ img.product-close {
 }
 
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 650px)
 {
 
   .nav-bar{
@@ -1918,7 +1997,7 @@ img.product-close {
 }
 
 .logo {
-  width: 100%;
+  width: 75%;
 }
 
 #portfnav > li > a{
@@ -2177,6 +2256,118 @@ overflow: hidden;
 }
 
 
+/* solutions page  */
+
+
+.solutions{
+  margin: 25px 0px;
+}
+
+.solutions .nav-pills{
+gap: 4px;
+}
+
+.solutions .nav-fill .nav-item, .nav-fill>.nav-link{
+  width: 40%;
+}
+
+.solutions .nav-pills .nav-link{
+  background-color: #399DA2;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  border: 2px solid transparent;
+  transition: all 0.5s;
+  padding: 10px 5px;
+}
+
+.solutions .nav-pills .nav-link:hover{
+  color: #399DA2;
+  background-color: transparent;
+  border-color: #399DA2;
+}
+
+/* .solutions .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  color: #399DA2;
+  background-color: transparent;
+  border-color: #399DA2;
+} */
+
+.solution-tab-content{
+  margin: 30px 0px;
+}
+
+.solutions-content-row{
+  gap: 19px;
+}
+
+.solutions h3{
+  color: #399DA2;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 0px 0px;
+}
+
+.solutions p{
+  color: #383838;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 23px;
+  padding: 0px 0px;
+}
+
+
+.solutions .carousel-indicators {
+  position: unset;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  row-gap: 4px;
+}
+
+.solutions .carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 47%;
+    height: auto;
+    padding: 10px 4px;
+    margin-right: 0px;
+    margin-left: 0px;
+    text-indent: unset;
+    cursor: pointer;
+    background-color: #399DA2;
+    color: white;
+    font-size: 12px;
+  font-weight: 600;
+    border-radius: 6px;
+    background-clip: border-box;
+    border: 0;
+    border-top: none;
+    border-bottom: none;
+    opacity: 1;
+    transition: opacity .6s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2211,6 +2402,10 @@ overflow: hidden;
   color: #2E5974;
   font-size: 12px;
   font-weight: bold;
+}
+
+.solutions .nav-pills .nav-link{
+  font-size: 10px;
 }
 
 }
