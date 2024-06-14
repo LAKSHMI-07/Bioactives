@@ -1571,6 +1571,7 @@ font-weight: 500;
 .bankingPartners img{
   filter: opacity(0.4) grayscale(100%);
   transition: all 0.5s;
+  width: 100%;
 }
 
 .bankingPartners img:hover{
@@ -1607,7 +1608,7 @@ font-weight: 500;
   color: rgb(55 56 61 / 70%);
 font-size: 16px;
 font-weight: 500;
-padding-right: 5px;
+padding-left: 10px;
 margin: 0;
 
 }
@@ -1636,6 +1637,15 @@ font-weight: 700;
   background-color: #707070;
   display: inline-block;
   margin: 0px 12px;
+}
+
+
+.map-mob{
+  display: none;
+}
+
+.map-web{
+  display: block;
 }
 
 
@@ -2602,6 +2612,259 @@ gap: 4px;
     opacity: 1;
     transition: opacity .6s ease;
 }
+
+
+
+
+/* About Page CSS Company Profile */
+
+.about-details-banner img {
+  height: 330px;
+}
+
+.about-banner-text {
+  bottom: 35px;
+}
+
+.company-info .vline{
+height: 38px;
+width: 0.5px;
+background-color:rgb(46 89 116 / 20%);
+}
+
+.company-info  h4{
+margin: 0;
+color: var(--blue);
+font-size: 14px;
+font-weight: bold;
+line-height: 30px;
+}
+
+.company-info p{
+color: var(--gray);
+font-size: 13px;
+font-weight: 500;
+margin: 0;
+}
+
+.info-items {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding: 50px 0px;
+  row-gap: 30px;
+  flex-direction: column;
+}
+
+.info-items img{
+  width: 59px;
+  height: 59px;
+}
+
+.info-item{
+  display: flex;
+    gap: 15px;
+}
+
+.company-department {
+  background-color: var(--blue);
+}
+
+.company-department img{
+  width: 38px;
+  height: 38px;
+}
+
+.company-department h4{
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+  margin: 24px 0px;
+}
+
+.company-department .info-items{
+  gap: 30px;
+}
+
+
+.company-department p{
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.company-item {
+  text-align: center;
+  padding: 0px 75px;
+}
+
+.groupCompanies{
+  text-align: center;
+  padding: 40px 0px;
+}
+
+.groupCompanies h1{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 37px;
+  color: var(--blue);
+  margin-bottom: 32px;
+}
+
+.ceoMessage{
+  background-color: #F3F3F3;
+  padding: 45px 0px;
+}
+
+.ceo-profile{
+  display: flex;
+  gap: 25px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.ceo-profile img{
+  width: 76px;
+}
+
+.ceo-profile h1{
+  color: var(--blue);
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.ceo-profile h4{
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+}
+
+.ceoMessage-right{
+  padding-left:10px;
+}
+
+
+.ceoMessage-left{
+  padding-right:10px;
+}
+
+
+.ceoMessage h2{
+color: #383838;
+font-size: 20px;
+font-weight: 500;
+}
+
+.ceoMessage h3{
+  color:#383838;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 44px;
+}
+
+.ceoMessage h5{
+  font-size: 11px;
+  color: #383838;
+  line-height: 26px;
+}
+
+.partners-row {
+  margin: 0px 10px;
+}
+
+
+.partners-row div{
+ padding: 5px;
+}
+
+
+.bankingPartners img{
+  filter: opacity(1) grayscale(0%);
+  transition: all 0.5s;
+  width: 100%;
+}
+
+.bankingPartners img:hover{
+  filter: opacity(1) grayscale(0%);
+}
+
+.banking-border{
+  border-top: none;
+  border-bottom: none;
+  padding: 50px 0px;
+  margin: 0px 0px;
+}
+
+.banking-border h1{
+  margin-bottom: 25px;
+}
+
+.map{
+ position: relative;
+}
+
+.map-address-bg{
+  /* position: absolute;
+  width: 100%;
+  top: 0px; */
+  padding: 33px 0px;
+  background-color: #F5F5F5;
+  box-shadow: -5px 8px 9px -5px rgba(56 56 56 / 70%);
+}
+
+.map-address{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+ gap: 5px;
+}
+
+.map-address p{
+  color: rgb(55 56 61 / 70%);
+font-size: 16px;
+font-weight: 500;
+padding-right: 35px;
+padding-left: 0px;
+margin: 0;
+
+}
+.map-address .heading{
+color: #047F87;
+font-size: 18px;
+font-weight: 700;
+}
+
+.map-address span {
+  color: var(--blue);
+  font-weight: 700;
+  
+}
+
+.map-address a{
+  color: #707175;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.smalllinev
+{
+ display: none;
+}
+
+.map-mob{
+  display: block;
+}
+
+.map-web{
+  display: none;
+}
+
 
 
 
